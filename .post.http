@@ -1,0 +1,27 @@
+# --------requisições de postagens--------
+
+GET http://localhost:8080/postagens
+###
+
+GET http://localhost:8080/postagens/e3ffd4a7-e8aa-42eb-8c14-cb1e4bba3496
+###
+
+POST http://localhost:8080/postagens
+Content-Type: application/json
+
+{
+     "nome":"NOVO QUADRINHO DO STAR WARS !!!"
+}
+### 
+
+put http://localhost:8080/postagens?id=38881568-853d-4e2d-a772-b716c5c24e7e
+Content-Type: application/json
+
+{
+     "nome":"NOVO QUADRINHO DO STAR WARS !!!",
+     "valor":"R$ 55,90"
+}
+###
+
+DELETE  http://localhost:8080/postagens?id=e3ffd4a7-e8aa-42eb-8c14-cb1e4bba3496
+###

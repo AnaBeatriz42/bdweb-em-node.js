@@ -1,0 +1,35 @@
+# --------Requisições de usuarios--------
+
+GET http://localhost:8080/
+###
+
+GET http://localhost:8080/usuarios
+###
+
+GET http://localhost:8080/usuarios/2
+###
+
+POST http://localhost:8080/usuarios
+Content-Type: application/json
+
+{
+     "nome":"maria florentina",
+     "email":"mariazinha@gmail.com",
+     "senha": "123teste"
+}
+### 
+
+put http://localhost:8080/usuarios?id=1
+Content-Type: application/json
+
+{
+     "nome":"maria carolina",
+     "email":"mariazinha@gmail.com",
+     "senha": "1234"
+}
+###
+
+DELETE  http://localhost:8080/usuarios?id=1
+###
+
+
